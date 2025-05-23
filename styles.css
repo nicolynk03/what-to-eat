@@ -69,3 +69,27 @@ nav {
     text-align: center;
 }
 
+.card {
+    background-color: rgba(85, 91, 110, 0.1);
+    padding: 40px 60px;
+    border-radius: 20px;
+    max-width: 550px;
+    width: 90%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+#greeting {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subtext {
+    font-size: 1.5em;
+    color: #47928e;
+}
+
