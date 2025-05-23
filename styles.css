@@ -1,0 +1,11 @@
+:root {
+    --main-background: #F6F4F4;
+    --main-textcolour: #89B0AE;
+    --alt-background: #555B6E;
+    --alt-textcolour: #BEE3DB;
+    --extracolour: #FF9D5C;
+}
+
+html {
+    scroll-behavior: smooth;
+}
