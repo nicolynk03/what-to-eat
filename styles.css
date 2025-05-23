@@ -78,7 +78,7 @@ nav {
     transition: transform 0.3s ease;
 }
 
-.card:hover {
+.card:hover, .calendar:hover {
     transform: scale(1.02);
 }
 
@@ -91,5 +91,90 @@ nav {
 .subtext {
     font-size: 1.5em;
     color: #47928e;
+}
+
+/* dynamic calendar */
+.calendar {
+    width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(85, 91, 110, 0.1);
+    border-radius: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.calendar-header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    color: #FF9D5C;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.monthYear {
+    text-align: center;
+    font-weight: 600;
+    width: 150px;
+}
+
+/* arrange how days are displayed in the calendar */
+.days {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.day {
+    text-align: center;
+    padding: 5px;
+    color: #369893;
+    font-weight: 500;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 50%;
+    width: 62%;
+    height: 68%;
+}
+
+.date:hover, .date.active {
+    background: #FF9D5C;
+    color: #09a39c;
+}
+
+/* date outside current month */
+.date.inactive {
+    color: #abacac;
+}
+
+.date.inactive:hover {
+    color: #fff;
+    /* background: #47928e; */
 }
 
