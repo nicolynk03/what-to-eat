@@ -6,6 +6,66 @@
     --extracolour: #FF9D5C;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: var(--main-background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+header {
+    background-color: var(--alt-background);
+    color: var(--alt-textcolour);
+    padding: 10px 0;
+}
+
+#logo {
+    float: left;
+    font-size: 1.5em;
+    padding-top: 8px;
+}
+
+nav {
+    float: right;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links a {
+    display: inline-block;
+    margin-left: 20px;
+    color: var(--alt-textcolour);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+}
+
+.navbar-links a:hover {
+    color: var(--extracolour)
+}
+
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
