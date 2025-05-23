@@ -102,6 +102,10 @@ nav {
     padding: 10px;
     background-color: rgba(85, 91, 110, 0.1);
     border-radius: 20px;
+    /* position adjustment */
+    margin-left: 49rem;
+    margin-top: -12rem;
+    margin-right: 2rem;
 }
 
 .calendar-header {
