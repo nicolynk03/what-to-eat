@@ -182,3 +182,20 @@ nav {
     /* background: #47928e; */
 }
 
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--alt-background);
+    color: var(--alt-textcolour);
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
