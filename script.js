@@ -73,3 +73,43 @@ nextBtnElement.addEventListener('click', () => {
 })
 
 updateCalendar();
+
+
+// dynamic list
+// select elements
+var addButton = document.getElementById('add-item-button');
+var itemInput = document.getElementById('addIdea');
+var dynamicList = document.getElementById('dynamic-list');
+
+// add new item to the list
+function addNewListItem() {
+    // get value from input field
+    var newItemIdea = itemInput.value.trim();
+
+    // check if input is not empty
+    if (newItemIdea) {
+        // create a new list item element
+        var listItem = document.createElement('li');
+        listItem.textContent = newItemIdea;
+
+        // append new list item to dynamic list
+        dynamicList.appendChild(listItem);
+
+        // clear input field for next item
+        itemInput.value = '';
+    } else {
+        alert('Please enter your dinner idea.');
+    }
+}
+
+// add an event listener to the '+' button
+addButton.addEventListener('click', addNewListItem);
+// add an evet listener for the Enter key in input field
+itemInput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        addNewListItem();
+    }
+});
+
+
+

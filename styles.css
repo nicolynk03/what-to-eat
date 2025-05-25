@@ -80,7 +80,8 @@ nav {
     margin-top: 2px;
 }
 
-.card:hover, .calendar:hover {
+.card:hover,
+.calendar:hover {
     transform: scale(1.02);
 }
 
@@ -108,7 +109,7 @@ nav {
     margin-left: 49rem;
     margin-top: -11.6rem;
     margin-right: 2rem;
-    
+
 }
 
 .calendar-header {
@@ -128,7 +129,7 @@ nav {
     color: #FF9D5C;
     width: 30px;
     height: 30px;
-    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .monthYear {
@@ -140,7 +141,7 @@ nav {
 /* arrange how days are displayed in the calendar */
 .days {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .day {
@@ -170,7 +171,8 @@ nav {
     height: 68%;
 }
 
-.date:hover, .date.active {
+.date:hover,
+.date.active {
     background: #FF9D5C;
     color: #09a39c;
 }
@@ -185,8 +187,41 @@ nav {
     /* background: #47928e; */
 }
 
+/* dinner ideas list */
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
 
+#add-idea-list {
+    margin: 20px;
+}
 
+#addItemBtn {
+    padding: 0px 5px;
+    background-color: #FF9D5C;
+    color: #09a39c;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#addItemBtn:hover {
+    background-color: #47928e;
+    color: #FF9D5C;
+}
+
+.add-btn {
+    margin-top: -38px;
+    margin-left: 245px;
+}
+
+#dynamic-list li {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-top: 5px;
+}
 
 footer {
     position: fixed;
@@ -199,6 +234,3 @@ footer {
     text-align: center;
     padding: 5px;
 }
-
-
-
