@@ -197,7 +197,7 @@ input {
     margin: 20px;
 }
 
-#addItemBtn {
+#add-item-button {
     padding: 0px 5px;
     background-color: #FF9D5C;
     color: #09a39c;
@@ -206,7 +206,7 @@ input {
     cursor: pointer;
 }
 
-#addItemBtn:hover {
+#add-item-button:hover {
     background-color: #47928e;
     color: #FF9D5C;
 }
@@ -221,6 +221,7 @@ input {
     border: 1px solid #ddd;
     padding: 5px;
     margin-top: 5px;
+    list-style: none;
 }
 
 footer {
